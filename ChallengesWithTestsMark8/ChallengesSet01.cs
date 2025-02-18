@@ -38,12 +38,13 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            return $"Hello, {nameOfPerson}!";
+            // Check if the name is null or empty and return an appropriate greeting
+            return string.IsNullOrEmpty(nameOfPerson) ? "Hello!" : $"Hello, {nameOfPerson}!";
         }
 
         public string GetHey()
         {
-            return "Hey!";
+            return "HEY!";
         }
     }
 }
